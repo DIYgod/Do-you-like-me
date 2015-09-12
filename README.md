@@ -4,11 +4,11 @@
 ## 前言
 
 + idea 来自于 [MoeFront](https://moefront.github.io/)
-+ PHP是我委托 [LWL](https://blog.lwl12.com/) 在 [月光光](http://www.helloweba.com/view-blog-237.html) 的基础上写的
++ PHP是 [LWL](https://blog.lwl12.com/) 在 [月光光](http://www.helloweba.com/view-blog-237.html) 的基础上帮我写的
 
 ## 食用说明
 
-1. 创建一个mysql数据表，执行以下SQL语句
++ 创建一个mysql数据表，执行以下SQL语句
 ```
 CREATE TABLE IF NOT EXISTS `votes` (
    `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -27,9 +27,9 @@ CREATE TABLE IF NOT EXISTS `votes` (
    `ip` varchar(40) NOT NULL
  ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 ```
-1. 在`like.php`里填入数据库信息
-1. 上传文件
-1. Enjoy it!
++ 在`like.php`里填入数据库信息
++ 上传文件
++ Enjoy it!
 
 ## LICENSE
 
