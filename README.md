@@ -31,6 +31,11 @@ CREATE TABLE IF NOT EXISTS `votes` (
 + 上传文件
 + Enjoy it!
 
+## Demo
+
+1. [Anotherhome](www.anotherhome.net)右侧栏
+1. https://www.anotherhome.net/file/like/
+
 ## LICENSE
 
 (MIT License)
