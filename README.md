@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `votes` (
 
 ## Demo
 
-1. [Anotherhome](www.anotherhome.net)右侧栏
+1. [Anotherhome](https://www.anotherhome.net)右侧栏
 1. https://www.anotherhome.net/file/like/
 
 ## LICENSE
