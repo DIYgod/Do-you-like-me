@@ -13,13 +13,12 @@
 CREATE TABLE IF NOT EXISTS `votes` (
    `id` int(10) NOT NULL AUTO_INCREMENT,
    `likes` int(10) NOT NULL DEFAULT '0',
-   `unlikes` int(10) NOT NULL DEFAULT '0',
    PRIMARY KEY (`id`)
  ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 
- INSERT INTO `votes` (`id`, `likes`, `unlikes`) VALUES
- (1, 30, 10);
+ INSERT INTO `votes` (`id`, `likes`) VALUES
+ (1, 30);
 
  CREATE TABLE IF NOT EXISTS `votes_ip` (
    `id` int(10) NOT NULL,
