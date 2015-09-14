@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `votes` (
 
 
  INSERT INTO `votes` (`id`, `likes`) VALUES
- (1, 30);
+ (1, 0);
 
  CREATE TABLE IF NOT EXISTS `votes_ip` (
    `id` int(10) NOT NULL,
