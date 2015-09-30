@@ -1,0 +1,12 @@
+{
+  "name": "Do_you_like_me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "DIYgod",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "mongoose": "^4.1.9"
+  }
+}

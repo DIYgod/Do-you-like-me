@@ -4,9 +4,11 @@
 ## 前言
 
 + idea 来自于 [MoeFront](https://moefront.github.io/)
-+ PHP是 [LWL](https://blog.lwl12.com/) 在 [月光光](http://www.helloweba.com/view-blog-237.html) 的基础上帮我写的
++ 后端使用NodeJS + MongoDB 或者 PHP + MySQL，其中PHP版是 [LWL](https://blog.lwl12.com/) 在 [月光光](http://www.helloweba.com/view-blog-237.html) 的基础上帮我写的
 
 ## 食用说明
+
+1. 后端使用 PHP + MySQL
 
 + 创建一个mysql数据表，执行以下SQL语句
 ```
@@ -29,6 +31,23 @@ CREATE TABLE IF NOT EXISTS `votes` (
 + 在`like.php`里填入数据库信息
 + 上传文件
 + Enjoy it!
+
+2. 后端使用 NodeJS + MongoDB
+
++ 安装 NodeJS 和 MongoDB
++ 上传文件
++ 在 `nodejs` 目录运行:
+```
+npm install
+nohup node index.js &
+```
++ 将 `js/like.js` 里的接口改为
+```
+域名:8888//api/like?action=add
+域名:8888//api/like?action=get
+```
++ Enjoy it!
+
 
 ## Demo
 
