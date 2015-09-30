@@ -8,7 +8,7 @@
 
 ## 食用说明
 
-1. 后端使用 PHP + MySQL
+### 后端使用 PHP + MySQL
 
 + 创建一个mysql数据表，执行以下SQL语句
 ```
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `votes` (
 + 上传文件
 + Enjoy it!
 
-2. 后端使用 NodeJS + MongoDB
+### 后端使用 NodeJS + MongoDB
 
 + 安装 NodeJS 和 MongoDB
 + 上传文件
@@ -43,8 +43,8 @@ nohup node index.js &
 ```
 + 将 `js/like.js` 里的接口改为
 ```
-域名:8888//api/like?action=add
-域名:8888//api/like?action=get
+域名:8888/api/like?action=add
+域名:8888/api/like?action=get
 ```
 + Enjoy it!
 
