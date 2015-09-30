@@ -8,6 +8,22 @@
 
 ## 食用说明
 
+### 后端使用 NodeJS + MongoDB
+
++ 安装 NodeJS 和 MongoDB
++ 上传文件
++ 在 `nodejs` 目录运行:
+```
+npm install
+nohup node index.js &
+```
++ 将 `js/like.js` 里的接口改为
+```
+域名:8888/api/like?action=add
+域名:8888/api/like?action=get
+```
++ Enjoy it!
+
 ### 后端使用 PHP + MySQL
 
 + 创建一个mysql数据表，执行以下SQL语句
@@ -31,23 +47,6 @@ CREATE TABLE IF NOT EXISTS `votes` (
 + 在`like.php`里填入数据库信息
 + 上传文件
 + Enjoy it!
-
-### 后端使用 NodeJS + MongoDB
-
-+ 安装 NodeJS 和 MongoDB
-+ 上传文件
-+ 在 `nodejs` 目录运行:
-```
-npm install
-nohup node index.js &
-```
-+ 将 `js/like.js` 里的接口改为
-```
-域名:8888/api/like?action=add
-域名:8888/api/like?action=get
-```
-+ Enjoy it!
-
 
 ## Demo
 
