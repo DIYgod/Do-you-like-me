@@ -1,5 +1,9 @@
 # Do you like me?
-----
+
+[![npm](https://img.shields.io/npm/v/do-you-like-me.svg)](https://www.npmjs.com/package/do-you-like-me)
+[![npm](https://img.shields.io/npm/l/do-you-like-me.svg)](https://www.npmjs.com/package/do-you-like-me)
+[![npm](https://img.shields.io/npm/dt/do-you-like-me.svg)](https://www.npmjs.com/package/do-you-like-me)
+[![GitHub issues](https://img.shields.io/github/issues/DIYgod/Do-you-like-me.svg)](https://github.com/DIYgod/Do-you-like-me/issues)
 
 ## 前言
 
@@ -7,11 +11,6 @@
 + 后端使用NodeJS + MongoDB 或者 PHP + MySQL，其中PHP版是 [LWL](https://blog.lwl12.com/) 在 [月光光](http://www.helloweba.com/view-blog-237.html) 的基础上帮我写的
 
 ## 食用说明
-
-[![npm](https://img.shields.io/npm/v/do-you-like-me.svg)](https://www.npmjs.com/package/do-you-like-me)
-[![npm](https://img.shields.io/npm/l/do-you-like-me.svg)](https://www.npmjs.com/package/do-you-like-me)
-[![npm](https://img.shields.io/npm/dt/do-you-like-me.svg)](https://www.npmjs.com/package/do-you-like-me)
-[![GitHub issues](https://img.shields.io/github/issues/DIYgod/Do-you-like-me.svg)](https://github.com/DIYgod/Do-you-like-me/issues)
 
 ### 后端配置
 
