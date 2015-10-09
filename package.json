@@ -1,6 +1,6 @@
 {
   "name": "do-you-like-me",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Do you like me?",
   "main": "index.html",
   "scripts": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/DIYgod/Do-you-like-me/issues"
   },
-  "homepage": "https://github.com/DIYgod/Do-you-like-me#readme"
+  "homepage": "https://github.com/DIYgod/Do-you-like-me#readme",
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
 }
