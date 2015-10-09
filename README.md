@@ -8,10 +8,17 @@
 
 ## 食用说明
 
-### 后端使用 NodeJS + MongoDB
+[![npm](https://img.shields.io/npm/v/do-you-like-me.svg)](https://www.npmjs.com/package/do-you-like-me)
+[![npm](https://img.shields.io/npm/l/do-you-like-me.svg)](https://www.npmjs.com/package/do-you-like-me)
+[![npm](https://img.shields.io/npm/dt/do-you-like-me.svg)](https://www.npmjs.com/package/do-you-like-me)
+[![GitHub issues](https://img.shields.io/github/issues/DIYgod/Do-you-like-me.svg)](https://github.com/DIYgod/Do-you-like-me/issues)
+
+### 后端配置
+
+#### 使用 NodeJS + MongoDB
 
 + 安装 NodeJS 和 MongoDB
-+ 上传文件
++ 上传 `nodejs/*`
 + 在 `nodejs` 目录运行:
 ```
 npm install
@@ -24,7 +31,7 @@ nohup node index.js &
 ```
 + Enjoy it!
 
-### 后端使用 PHP + MySQL
+#### 使用 PHP + MySQL
 
 + 创建一个mysql数据表，执行以下SQL语句
 ```
@@ -44,9 +51,13 @@ CREATE TABLE IF NOT EXISTS `votes` (
    `ip` varchar(40) NOT NULL
  ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 ```
-+ 在`like.php`里填入数据库信息
-+ 上传文件
++ 在 `like.php` 里填入数据库信息
++ 上传 `like.php`
 + Enjoy it!
+
+### 前端
+
+以 `demo` 目录内容为例
 
 ## Demo
 
