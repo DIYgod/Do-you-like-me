@@ -1,9 +1,8 @@
 # Do you like me?
 
-[![npm](https://img.shields.io/npm/v/do-you-like-me.svg)](https://www.npmjs.com/package/do-you-like-me)
-[![npm](https://img.shields.io/npm/l/do-you-like-me.svg)](https://www.npmjs.com/package/do-you-like-me)
-[![npm](https://img.shields.io/npm/dt/do-you-like-me.svg)](https://www.npmjs.com/package/do-you-like-me)
-[![GitHub issues](https://img.shields.io/github/issues/DIYgod/Do-you-like-me.svg)](https://github.com/DIYgod/Do-you-like-me/issues)
+[![npm](https://img.shields.io/npm/v/do-you-like-me.svg?style=flat-square))](https://www.npmjs.com/package/do-you-like-me)
+[![npm](https://img.shields.io/npm/l/do-you-like-me.svg?style=flat-square))](https://www.npmjs.com/package/do-you-like-me)
+[![npm](https://img.shields.io/npm/dt/do-you-like-me.svg?style=flat-square))](https://www.npmjs.com/package/do-you-like-me)
 
 ## 前言
 
