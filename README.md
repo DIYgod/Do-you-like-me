@@ -34,20 +34,21 @@ nohup node index.js &
 + 创建一个mysql数据表，执行以下SQL语句
 ```
 CREATE TABLE IF NOT EXISTS `votes` (
-   `id` int(10) NOT NULL AUTO_INCREMENT,
-   `likes` int(10) NOT NULL DEFAULT '0',
-   PRIMARY KEY (`id`)
- ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+    `id` int(10) NOT NULL AUTO_INCREMENT,
+    `likes` int(10) NOT NULL DEFAULT '0',
+    PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
- INSERT INTO `votes` (`id`, `likes`) VALUES
- (1, 0);
+INSERT INTO `votes` (`id`, `likes`) VALUES
+(1, 0);
 
- CREATE TABLE IF NOT EXISTS `votes_ip` (
-   `id` int(10) NOT NULL,
-   `vid` int(10) NOT NULL,
-   `ip` varchar(40) NOT NULL
- ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `votes_ip` (
+    `id` int(10) NOT NULL AUTO_INCREMENT,
+    `vid` int(10) NOT NULL,
+    `ip` varchar(40) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 ```
 + 在 `like.php` 里填入数据库信息
 + 上传 `like.php`
