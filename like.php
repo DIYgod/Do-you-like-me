@@ -1,12 +1,8 @@
 <?php
 $host="localhost";
-$db_user="";  //用户名
-$db_pass="";  //密码
-$db_name="";  //数据库名
-
-$link=mysql_connect($host,$db_user,$db_pass);
-mysql_select_db($db_name,$link);
-mysql_query("SET names UTF8");
+$db_user="";//用户名
+$db_pass="";//密码
+$db_name="";//数据库名
 
 header("Content-Type: application/json; charset=utf-8");
 
@@ -14,23 +10,28 @@ $action = $_GET['action'];
 $id = 1;
 $ip = get_client_ip();
 
+$link=mysqli_connect($host,$db_user,$db_pass,$db_name);
+if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
+}
 if($action=='add'){
-	likes($id,$ip);
+	likes($id,$ip,$link);
 }else if($action=='get'){
-	echo jsons($id);
+	echo jsons($id,$link);
 } else {
 	exit();
 }
 
-function likes($id,$ip){
-	$ip_sql=mysql_query("select ip from votes_ip where vid='$id' and ip='$ip'");
-	$count=mysql_num_rows($ip_sql);
+function likes($id,$ip,$link){
+	$ip_sql=mysqli_query($link,"select ip from votes_ip where vid='$id' and ip='$ip'");
+	$count=mysqli_num_rows($ip_sql);
 	if($count==0){//还没有顶过
 		$sql = "update votes set likes=likes+1 where id=".$id;
-		mysql_query($sql);
+		mysqli_query($link,$sql);
 		$sql_in = "insert into votes_ip (vid,ip) values ('$id','$ip')";
-		mysql_query($sql_in);
-		echo jsons($id);
+		mysqli_query($link,$sql_in);
+		echo jsons($id,$link);
 	}else{
 		$msg = 'repeat';
 		$arr['success'] = 0;
@@ -39,9 +40,8 @@ function likes($id,$ip){
 	}
 }
 
-function jsons($id){
-	$query = mysql_query("select * from votes where id=".$id);
-	$row = mysql_fetch_array($query);
+function jsons($id,$link){
+	$row = mysqli_fetch_array(mysqli_query($link,"select * from votes where id=".$id));
 	$arr['success'] = 1;
 	$arr['like'] = $row['likes'];	
 	return json_encode($arr);

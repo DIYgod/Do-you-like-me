@@ -39,6 +39,7 @@ CREATE TABLE IF NOT EXISTS `votes` (
     PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+
 INSERT INTO `votes` (`id`, `likes`) VALUES
 (1, 0);
 
