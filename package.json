@@ -11,9 +11,7 @@
     "url": "git+https://github.com/DIYgod/Do-you-like-me.git"
   },
   "keywords": [
-    "like",
-    "Mongodb",
-    "node"
+    "like"
   ],
   "author": "DIYgod",
   "license": "MIT",
