@@ -19,8 +19,8 @@ $ nohup node index.js &
 ```
 + Change `js/like.js`
 ```
-域名:8888/api/like?action=add
-域名:8888/api/like?action=get
+url:8888/api/like?action=add
+url:8888/api/like?action=get
 ```
 + Enjoy it!
 
@@ -54,7 +54,7 @@ See `demo`
 
 ## Demo
 
-1. [Anotherhome](https://www.anotherhome.net)右侧栏
+1. [Anotherhome](https://www.anotherhome.net)
 1. https://www.anotherhome.net/file/like/
 
 ## LICENSE
