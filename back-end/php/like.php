@@ -24,12 +24,12 @@ if($action=='add'){
 }
 
 function likes($id,$ip,$link){
-	$ip_sql=mysqli_query($link,"select ip from votes_ip where vid='$id' and ip='$ip'");
+	$ip_sql=mysqli_query($link,"select ip from votes_ip where ip='$ip'");
 	$count=mysqli_num_rows($ip_sql);
 	if($count==0){//还没有顶过
 		$sql = "update votes set likes=likes+1 where id=".$id;
 		mysqli_query($link,$sql);
-		$sql_in = "insert into votes_ip (vid,ip) values ('$id','$ip')";
+		$sql_in = "insert into votes_ip (ip) values ('$ip')";
 		mysqli_query($link,$sql_in);
 		echo jsons($id,$link);
 	}else{
