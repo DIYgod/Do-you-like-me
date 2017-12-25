@@ -39,7 +39,6 @@ INSERT INTO `votes` (`id`, `likes`) VALUES
 
 CREATE TABLE IF NOT EXISTS `votes_ip` (
     `id` int(10) NOT NULL AUTO_INCREMENT,
-    `vid` int(10) NOT NULL,
     `ip` varchar(40) NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
